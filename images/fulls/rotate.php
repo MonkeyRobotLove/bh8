@@ -12,7 +12,7 @@ $folder = '';
 $exts = 'jpg jpeg png gif';
 
 $files = array(); $i = -1; // Initialize some variables
-if ('' == $folder) $folder = 'https://monkeyrobotlove.github.io/bh8/images/fulls/01.jpg';
+if ('' == $folder) $folder = '';
 
 $handle = opendir($folder);
 $exts = explode(' ', $exts);
