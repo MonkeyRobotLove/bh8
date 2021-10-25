@@ -15,7 +15,7 @@ $files = array(); $i = -1; // Initialize some variables
 if ('' == $folder) $folder = '';
 
 $handle = opendir($folder);
-$exts = explode(' ', $exts);
+$exts = explode('jpg jpeg png gif', $exts);
 while (false !== ($file = readdir($handle))) {
 foreach($exts as $ext) { // for each extension check the extension
 if (preg_match('/\.'.$ext.'$/i', $file, $test)) { // faster than ereg, case insensitive
